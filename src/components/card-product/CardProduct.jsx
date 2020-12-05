@@ -26,4 +26,4 @@ const CardProduct = () => (
     </article>
 );
 
-import default CardProduct;
+export default CardProduct;
