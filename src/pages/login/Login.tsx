@@ -1,7 +1,9 @@
 import React from 'react';
 
 const Login = () => (
-    <h1>Login Page</h1>
+    <div className="margins-page">
+        <h1>Login Page</h1>
+    </div>
 );
 
 export default Login;

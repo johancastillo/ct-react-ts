@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Home = () => (
-    <div style={{marginLeft: '10px', marginRight: '10px'}}>
+    <div className="margins-page">
         <h1>Is this Home Page</h1>
     </div>
 );

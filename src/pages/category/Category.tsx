@@ -1,7 +1,9 @@
 import React from 'react';
 
 const Category = () => (
-    <h1>Category Page</h1>
+    <div className="margins-page">
+        <h1>Category Page</h1>
+    </div>
 );
 
 export default Category;

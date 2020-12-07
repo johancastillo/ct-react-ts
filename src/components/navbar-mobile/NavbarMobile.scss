@@ -1,8 +1,4 @@
-$colorPalette: (
-  primary: #faa32d,
-  secondary:  #5a595e,
-  tertiary: #fff
-);
+@import './../../styles/colorPalette.scss';
 
 // Styles of the navbar
 .bg-navbar{
