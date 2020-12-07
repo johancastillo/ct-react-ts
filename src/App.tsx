@@ -1,28 +1,92 @@
 import React from 'react';
 import './App.scss';
-import CardProduct from './components/card-product/CardProduct';
 
-function App(props:any) {
+// React Router DOM
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom';
+
+// Components
+import NavbarMobile from './components/navbar-mobile/NavbarMovile';
+
+// Pages
+import Search from './pages/search/Search';
+import Home from './pages/home/Home';
+import Login from './pages/login/Login';
+import Register from './pages/register/Register';
+import PasswordReset from './pages/password-reset/PasswordReset';
+import Category from './pages/category/Category';
+import Subcategory from './pages/subcategory/Subcategory';
+
+
+
+function App() {
   return (
     <>
-      <div className="ed-grid m-grid-4 s-grid-2">
-        <CardProduct 
-          image="https://image-galery.herokuapp.com/static/media/1.691fd698.webp"
-        />
+      <Router>
+        <>
+        <NavbarMobile />
 
-        <CardProduct 
-          image="https://image-galery.herokuapp.com/static/media/1.691fd698.webp"
-        />
+          {/** Dinamic Content **/}
+          <Switch>
+            <Route path="/" exact>
+              <Home  />  
+            </Route>
 
-        <CardProduct 
-          image="https://image-galery.herokuapp.com/static/media/1.691fd698.webp"
-        />
+            <Route path="/servicios">
+              <h1 className="text-center">
+                Esta es la página de Services
+              </h1>
+            </Route>
 
-        <CardProduct 
-          image="https://image-galery.herokuapp.com/static/media/1.691fd698.webp"
-        />
+            <Route path="/productos" exact>
+              <h1 className="text-center">
+                Esta es la página de Products
+              </h1>
+            </Route>
 
-      </div>
+            <Route path="/producto">
+              <h1 className="text-center">Single product</h1>
+            </Route>
+
+            <Route path="/mi-cuenta">
+              <h1 className="text-center">My Count</h1>
+            </Route>
+
+            <Route path="/carrito">
+              <h1 className="text-center">Cart</h1>
+            </Route>
+
+            <Route path="/login">
+              <Login />
+            </Route>
+
+            <Route path="/register">
+              <Register />
+            </Route>
+
+            <Route path="/busqueda">
+              <Search />
+            </Route>
+
+            <Route path="/reset-password">
+              <PasswordReset />
+            </Route>
+
+            <Route path="/categoria">
+              <Category />
+            </Route>
+
+            <Route path="/subcategoria">
+              <Subcategory />
+            </Route>
+
+          </Switch>
+
+      </>
+      </Router>
     </>
   );
 }
