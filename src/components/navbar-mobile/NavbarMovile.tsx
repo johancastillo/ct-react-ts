@@ -9,9 +9,9 @@ const NavbarMobile = (props:any) => (
         </div>
 
         <div className="ed-item s-50 s-right s-center">
-            <span className="icon">1</span>
-            <span className="icon">2</span>
-            <span className="icon">3</span>
+            <span className="icon icon-search"></span>
+            <span className="icon icon-user"></span>
+            <span className="icon icon-ct-cart"></span>
         </div>
     </div>
     
