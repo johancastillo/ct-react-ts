@@ -9,7 +9,7 @@ import {
 } from 'react-router-dom';
 
 // Components
-import NavbarMobile from './components/navbar-mobile/NavbarMovile';
+import Navegation from './components/navegation/Navegation';
 
 // Pages
 import Search from './pages/search/Search';
@@ -27,7 +27,7 @@ function App() {
     <>
       <Router>
         <>
-        <NavbarMobile />
+        <Navegation productsNumber={10} />
 
           {/** Dinamic Content **/}
           <Switch>
