@@ -44,6 +44,25 @@
     .search{
         display: flex;
         align-items: center;
+
+        .button{
+            background: map-get($colorPalette, primary);
+            border: none;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        input[type=text]{
+            border: 1px solid #faa32d;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+
+            &:hover{
+                border: 2px solid #faa32d !important;
+                border-top-right-radius: 0 !important;
+                border-bottom-right-radius: 0 !important; 
+            }
+        }
     }
 
     @media screen and (min-width: 900px) {
@@ -52,7 +71,7 @@
         }
     }
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1024px) {
         .search{
             display: none;
         }
