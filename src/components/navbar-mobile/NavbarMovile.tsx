@@ -3,7 +3,7 @@ import './NavbarMobile.scss';
 import logo from './logo.svg';
 
 const NavbarMobile = (props:any) => (
-    <div className="ed-container bg-navbar">
+    <div className="ed-container full bg-navbar">
         <div className="ed-item s-55 s-left">
             <img src={logo} alt=""/>
         </div>
