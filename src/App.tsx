@@ -9,7 +9,7 @@ import {
 } from 'react-router-dom';
 
 // Components
-import NavbarMobile from './components/navbar-mobile/NavbarMovile';
+import NavbarMobile from './components/navegation/Navegation';
 
 // Pages
 import Search from './pages/search/Search';

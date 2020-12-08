@@ -1,14 +1,20 @@
 import React from 'react';
-import './NavbarMobile.scss';
+import './Navegation.scss';
 import logo from './logo.svg';
 
-const NavbarMobile = (props:any) => (
+const Navegation = (props:any) => (
     <div className="ed-container full bg-navbar">
-        <div className="ed-item s-55 s-left">
+
+        <div className="ed-item s-60 s-left lg-25">
             <img src={logo} alt=""/>
         </div>
 
-        <div className="ed-item s-45 s-right icons flex">
+        <div className="ed-item lg-50 search">
+            <input type="text" placeholder="Buscar..." />
+            <button className="icon-search"></button>
+        </div>
+
+        <div className="ed-item s-40 lg-25 s-right icons flex">
             <span className="icon icon-search"></span>
             <span className="icon icon-user"></span>
 
@@ -19,7 +25,8 @@ const NavbarMobile = (props:any) => (
                 </span>
             </div>
         </div>
+
     </div> 
 );
 
-export default NavbarMobile;
+export default Navegation;
