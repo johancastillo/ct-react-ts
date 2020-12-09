@@ -20,12 +20,26 @@ const HorizontalScroll = () => (
                 title="Nombre del producto"
             />
 
-            <article className="item"></article>
-            <article className="item"></article>
-            <article className="item"></article>
-            <article className="item"></article>
-            <article className="item"></article>
-            <article className="item"></article>
+            <CardProduct 
+                image="https://image-galery.herokuapp.com/static/media/2.e07daa38.webp"
+                title="Nombre del producto"
+            />
+
+            <CardProduct 
+                image="https://image-galery.herokuapp.com/static/media/2.e07daa38.webp"
+                title="Nombre del producto"
+            />
+
+            <CardProduct 
+                image="https://image-galery.herokuapp.com/static/media/2.e07daa38.webp"
+                title="Nombre del producto"
+            />
+
+            <CardProduct 
+                image="https://image-galery.herokuapp.com/static/media/2.e07daa38.webp"
+                title="Nombre del producto"
+            />
+
         </aside>
     </section>
 );

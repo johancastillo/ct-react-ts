@@ -13,7 +13,9 @@ const Home = () => (
                 <Banner />
             </div>
 
-            <HorizontalScroll />
+            <div className="ed-grid">
+                <HorizontalScroll />
+            </div>
         </div>
     </>
 );
