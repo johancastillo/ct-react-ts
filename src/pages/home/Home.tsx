@@ -6,10 +6,9 @@ import Slider from '../../components/slider/Slider';
 const Home = () => (
     <>
         <Slider />
-        <div className="margins-page">
+        <div className="">
             <div className="ed-grid m-grid-2">
                 <Banner />
-
                 <Banner />
             </div>
         </div>

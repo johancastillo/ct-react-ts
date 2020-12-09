@@ -10,12 +10,15 @@ const Banner = () => (
         </div>
 
         <div className="box-content">
-            <h4 className="text-uppercase">
+            <h4 className="text-uppercase title">
                 Celulares y <br/>
                 <strong>Mucho más</strong>
             </h4>
 
-            <p>Encuentralo todo</p>
+            <p className="subtitle">
+                Encuentralo todo
+                <span className="icon-chevron-right"></span>
+            </p>
         </div>
     </div>
 );
