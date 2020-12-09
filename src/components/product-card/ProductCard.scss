@@ -1,9 +1,13 @@
-.img-container{
-    height: 218px;
-    background: #e5e5e5;
+.card{
+    border: 2px solid #E6E6E6;
 
-    img{
-        width: 200px;
-        height: 200px;
+    .img-container{
+        height: 218px;
+        background: #F8F8F8;
+    
+        img{
+            width: 200px;
+            height: 200px;
+        }
     }
 }
