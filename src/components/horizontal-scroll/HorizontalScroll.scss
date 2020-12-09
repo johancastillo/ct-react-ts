@@ -1,0 +1,17 @@
+#main {
+    overflow-x:scroll;
+    width:100%;
+
+    #horizontal-scroll {
+        display : inline-flex;
+        padding:1px;
+
+        .item {
+            border:1px solid black;
+            margin: 0px 10px;
+            min-width:150px;
+            min-height:113px;
+            padding: 0px;
+        }
+    }
+}    
