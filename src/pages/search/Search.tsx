@@ -1,6 +1,6 @@
 import React from 'react';
 
-import CardProduct from '../../components/card-product/CardProduct';
+import CardProduct from '../../components/product-card/ProductCard';
 
 
 const Search = () => (
